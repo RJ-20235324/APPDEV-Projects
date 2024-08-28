@@ -13,13 +13,23 @@ document.getElementById("output1").innerHTML = x
 }
 )
 
+Calculate_Prof.addEventListener("click", ()=> {
+    const sales = document.getElementById('sales').value;
+    const profit = sales * 0.23;
+
+    let fResult = 'ANSWER: profit is ' + profit.toFixed(2)
+
+    document.getElementById('result').innerHTML = fResult
+}
+)
+
+
 Calculate.addEventListener("click", ()=>{
 let time = document.getElementById("Vehicle_Time").value
 
 let speed = "60"
 
-typeof parseInt(speed)
-typeof parseInt(time)
+
 
 let distance = speed * time
 
@@ -33,8 +43,6 @@ MPG_Cal.addEventListener("click", ()=>{
     let Miles = document.getElementById("Miles").value
     let Galloons = document.getElementById("Gallon").value
 
-    typeof parseInt(Miles)
-    typeof parseInt(Galloons)
 
     let MPG = Miles / Galloons
 
@@ -54,4 +62,31 @@ FtoC.addEventListener("click", ()=>{
     let F_Mess = `ANSWER: ${F} Fahrenheit`
 
     document.getElementById("cel_far").innerHTML = F_Mess
+})
+
+compute_C.addEventListener("click", ()=> {
+    const cookiesPerBag = 40;
+    const servingsPerBag = 10;
+    const caloriesPerServing = 300;
+
+    const caloriesPerCookie = (caloriesPerServing * servingsPerBag) / cookiesPerBag;
+
+    const cookiesConsumed = document.getElementById('Cookies_Consumed').value;
+
+    const totalCalories = cookiesConsumed * caloriesPerCookie;
+
+    let CAL_Result = `ANSWER: Total calories consumed are ${totalCalories.toFixed(2)}`;
+    document.getElementById('Calories_Calcu').innerHTML = CAL_Result;
+})
+
+S_percentage.addEventListener("click", ()=> {
+    let Males = document.getElementById("male_Stud").value
+    let Females = document.getElementById("female_Stud").value
+
+    total_Class = parseInt(Males) + parseInt(Females)
+    total_Male = parseFloat(Males) / parseFloat(total_Class) * 100
+    total_Female = parseFloat(Females) / parseFloat(total_Class) * 100
+    percent_Result = 'ANSWER: Total Students ' + total_Class + ' Males are ' + total_Male + "% of the population and Females are " + total_Female + "% of the population."
+
+    document.getElementById('StudentPercentile').innerHTML = percent_Result;
 })
