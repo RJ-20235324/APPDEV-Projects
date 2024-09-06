@@ -1,0 +1,207 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+}
+
+
+/* ==== Colours ==== */
+:root{
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --side-nav:#242526 ;
+    --text-color: #CCC;
+    --body-text: #0000;
+    --blip-color: #FFFFFF;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--body-color);
+
+    
+}
+
+nav {
+position: sticky;
+top: 0px;
+z-index: 9999;
+}
+
+nav .nav-bar{
+    position: center;
+    width: auto;
+    background-color: var(--nav-color);
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.nav-bar .nav-links{
+    display: flex;
+    list-style: none;
+    padding-left: 70px;
+}
+
+.nav-bar .Home{
+    width: 7mm;
+    position: absolute;
+    right: 30px;
+    top: 5mm;
+    
+}
+
+.nav-links li a{
+    margin: auto;
+    position: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    transition: 400ms;
+}
+
+.nav-links li a:hover{
+    color: darkgoldenrod;
+}
+
+.aboutme{
+    position: relative;
+    margin: auto
+
+}
+
+.aboutme .Photos{
+    position: relative;
+    margin: auto;
+}
+
+.aboutme .Background{
+    height: 220px;
+    border: 3px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutme .Overlay{
+position: absolute;
+background-color: var(--nav-color);
+opacity: 40%;
+height: 100%;
+width: 100%;
+
+
+}
+
+.aboutme .photo-of-me img {
+
+    width: 2in;
+    position: absolute; 
+    top: 135px;
+    left: 30px;
+}
+
+.aboutme .Name{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    text-align: justify;
+    top: 235px;
+    left: 230px;
+    
+}
+
+.aboutme .Horizontal-Line{
+    position: absolute;
+    top: 345px;
+    background-color:#353434;
+    width: 100%;
+    height: 1px;
+
+
+}
+
+.aboutme .Bio{
+    position: absolute;
+    text-align: justify;
+    top: 275px;
+    left: 230px;
+}
+
+.aboutme .Description{
+   position: absolute;
+   top: 390px;
+   left: 30px;
+   width: 3in;
+   height: 80px;
+   border-radius: 9px;
+   padding: 10px;
+   background-color: var(--side-nav);
+}
+
+.aboutme .Description .Album{
+    height: 60px;
+    border-radius: 7px;
+    
+}
+
+.aboutme .Description .Song_Title{
+    text-decoration: none;
+    position: absolute;
+    top: 16px;
+    left: 90px;
+    font-size: large;
+
+}
+
+.aboutme .Description .Author{
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    color: #505050;
+}
+
+.aboutme .Center-Line{
+    position: absolute;
+    top: 369px;
+    left: 400px;
+    background-color:#353434;
+    width: 1px;
+    height: 300px;
+    
+}
+
+.aboutme .Message{
+    position: absolute;
+    text-align: justify;
+    text-indent: 20px;
+    margin: 20px;
+    left: 420px;
+    top: 369px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #242526;
+    position: fixed;
+    bottom: 0;
+    opacity: 0;
+    transition: 1s;
+    
+}
+
+footer:hover{
+    opacity: 1;
+}
