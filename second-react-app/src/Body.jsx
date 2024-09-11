@@ -7,7 +7,7 @@ export default function Body(props){
            <div class="Overlay"></div>
            <div class="Background"></div>
            <h2 class="Name">R J G. Salcedo</h2>
-           <div class="photo-of-me"><img src="../Files\Profile.jpg" alt=""/>
+           <div class="photo-of-me"><img src="src\assets\Profile.jpg" alt=""/>
            <p class="Bio">"Ad asta per aspera"</p>
            <div class="Horizontal-Line"></div>
          </div>
@@ -30,15 +30,3 @@ export default function Body(props){
    </div>
     )
 }
-Body.propTypes = {
-    name: PropTypes.string,
-    food: PropTypes.string,
-    Healthy: PropTypes.bool,
-    age: PropTypes.number
-}
- Body.defaultProps = {
-    name: "Guest",
-    food:"Unknown",
-    isHealthy: false,
-    age: 0
- }
