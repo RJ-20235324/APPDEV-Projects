@@ -1,0 +1,233 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main container */
+.shop-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Shop title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Remove default list styles */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.allItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0;
+}
+
+/* Product list styling */
+.itemDisplay {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 280px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+}
+
+.itemName {
+  color: #000000;
+  font-weight:bold ;
+  font-size: larger;
+}
+
+
+
+.itemIcon {
+  font-size: 2rem; /* Make icons bigger */
+}
+
+.itemDisplay button {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.itemDisplay button:hover {
+  background-color: #2ecc71;
+}
+
+/* Cart section */
+h4 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  color: #2c3e50;
+}
+
+.itemCard {
+  background-color: #fafafa;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.itemCard li {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.itemCard li br {
+  margin-bottom: 5px;
+}
+
+/* Cart price and payment */
+h4.total-price {
+  font-size: 1.5rem;
+  color: #e74c3c;
+}
+
+input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input[type="number"]:focus {
+  border-color: #27ae60;
+  outline: none;
+}
+
+button[type="submit"], button {
+  background-color: #2980b9;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover, button:hover {
+  background-color: #3498db;
+}
+
+button[type="submit"]:active, button:active {
+  background-color: #2980b9;
+}
+
+/* Payment status and receipt */
+.payment-status, .receipt {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.receipt {
+  border: 1px solid black;
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  margin: 0 auto; /* Center the receipt on the screen */
+  text-align: left;
+}
+
+.receipt h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+
+
+/* Ensure the receipt is not too wide */
+@media (max-width: 768px) {
+  .receipt {
+    max-width: 90%;
+  }
+}
+
+@media print {
+  .receipt {
+    max-width: 100%; /* Make sure it spans the full width of the printed page */
+    page-break-before: always; /* Ensure a page break before the receipt */
+    width: auto; /* Ensure auto width for print */
+    text-align: left;
+  }
+
+  /* Center the <pre> block within the receipt */
+  .receipt pre {
+    text-align: left; /* Ensure text is aligned properly in the pre tag */
+    margin: 0; /* Remove any default margin */
+    font-size: 1rem; /* Set a readable font size for printing */
+    width: 100%; /* Ensure the pre tag takes full width */
+    text-align: left;
+  }
+}
+
+/* Login Container */
+.login-container {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+/* Additional styles for the list items */
+li {
+  margin: 10px 0;
+  padding: 28px 48px 90px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
