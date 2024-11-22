@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+
 const games = [
     {
         id: 1, 
@@ -52,7 +53,7 @@ export default function Games() {
                         <li key={game.id}>
                             <Link to={`/games/${game.id}`} state={{game}}>
                                 {game.name.toUpperCase()}
-                            </Link> - {game.description}
+                            </Link> 
                         </li>
                     ))
                 }
