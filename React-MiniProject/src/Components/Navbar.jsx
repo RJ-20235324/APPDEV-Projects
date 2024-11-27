@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isSearchActive, setSearchActive] = useState(false);
@@ -16,12 +17,10 @@ export default function Navbar() {
       <div className="menu">
         <ul>
           <li>
-            <img src="/src/assets/K.png" alt="Keystaxx Logo" style={{ width: "40px", height: "40px" }} />
+            <img src="/src/assets/K.png" alt="Keystaxx Logo" style={{ width: "38px", height: "auto", marginTop: "2px" }} />
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
-            <a href="#" className="menu-item">
-              Home
-            </a>
+          <Link to="/" className="menu-item">Home</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
             <a href="#" className="menu-item">
