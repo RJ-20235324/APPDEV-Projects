@@ -23,34 +23,22 @@ export default function Navbar() {
           <Link to="/" className="menu-item">Home</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
-            <a href="#" className="menu-item">
-              Products
-            </a>
+          <Link to="/Products" className="menu-item">Products</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
-            <a href="#" className="menu-item">
-              Artisan Keyboards
-            </a>
+          <Link to="/ArtisanKeyboards" className="menu-item">Artisan Keyboards</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
-            <a href="#" className="menu-item">
-              Reviews
-            </a>
+          <Link to="/Reviews" className="menu-item">Reviews</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
-            <a href="#" className="menu-item">
-              Company Profile
-            </a>
+          <Link to="/CompanyProfile" className="menu-item">Company Profile</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
-            <a href="#" className="menu-item">
-              Developer Page
-            </a>
+            <Link to="/Developer" className="menu-item">Home</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
-            <a href="#" className="menu-item">
-              Support
-            </a>
+          <Link to="/Support" className="menu-item">Support</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
             <a href="#" id="search" onClick={handleSearchClick}>
