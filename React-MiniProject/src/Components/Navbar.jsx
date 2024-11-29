@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="menu">
         <ul>
           <li>
-            <img src="/src/assets/K.png" alt="Keystaxx Logo" style={{ width: "38px", height: "auto", marginTop: "2px" }} />
+            <img src="/src/assets/K.png" alt="Keystaxx Logo" style={{ width: "38px", height: "auto", marginTop: "2.5" }} />
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
           <Link to="/" className="menu-item">Home</Link>
