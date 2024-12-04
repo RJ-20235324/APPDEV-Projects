@@ -3,7 +3,7 @@ export default function Home() {
       <>
       {/*Featured */}
         <div class="card text-center" style={{marginTop: "44px"}}>
-            <div class="card-header">
+            <div class="card-header" style={{fontWeight: "bold"}}>
                 Featured
             </div>
             <div class="card-body-local">
