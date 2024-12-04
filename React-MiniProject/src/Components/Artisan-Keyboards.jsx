@@ -2,8 +2,9 @@
 const artisanKeycaps = [
     {
       id: 1,
-      image: '/src/assets/artisanKeycap1.png',
-      name: "Keystaxx Celestial - Resin Keycap",
+      image: '/src/assets/Keystaxx-Metal-Artisan-Keycap.webp',
+      preview:'Keystaxx Metal Artisan Keycap',
+      name: "Keystaxx Metal Artisan Keycap",
       price: "$34.99",
       material: "Handcrafted Resin",
       color: "Galactic Purple & Blue Swirl",
@@ -18,6 +19,7 @@ const artisanKeycaps = [
     {
       id: 2,
       image: '/src/assets/artisanKeycap2.png',
+      preview:'Keystaxx Fire Ember Keycap',
       name: "Keystaxx Ember - Fire Resin Keycap",
       price: "$39.99",
       material: "Premium Resin & Glitter",
@@ -33,6 +35,7 @@ const artisanKeycaps = [
     {
       id: 3,
       image: '/src/assets/artisanKeycap3.png',
+      preview:'Keystaxx Crystal Keycap',
       name: "Keystaxx Crystal - Clear Resin Keycap",
       price: "$29.99",
       material: "Transparent Resin",
@@ -48,6 +51,7 @@ const artisanKeycaps = [
     {
       id: 4,
       image: '/src/assets/artisanKeycap4.png',
+      preview:'Keystaxx Lunar Moonstone Keycap',
       name: "Keystaxx Lunar - Moonstone Keycap",
       price: "$44.99",
       material: "Moonstone Resin",
@@ -63,6 +67,7 @@ const artisanKeycaps = [
     {
       id: 5,
       image: '/src/assets/artisanKeycap5.png',
+      preview:'Keystaxx Wood Forest Keycap',
       name: "Keystaxx Forest - Wood & Resin Keycap",
       price: "$49.99",
       material: "Wood, Resin & Brass",
@@ -77,8 +82,9 @@ const artisanKeycaps = [
     },
     {
       id: 6,
-      image: '/src/assets/artisanKeycap6.png',
+      image: '/src/assets/Keystaxx-Aurora-Keycap.webp',
       name: "Keystaxx Aurora - Glow-in-the-Dark Keycap",
+      preview:'Keystaxx Aurora Keycap',
       price: "$24.99",
       material: "Glow-in-the-Dark Resin",
       color: "Green Glow with Blue Undertones",
@@ -94,6 +100,7 @@ const artisanKeycaps = [
       id: 7,
       image: '/src/assets/artisanKeycap7.png',
       name: "Keystaxx Honeycomb - Honey Resin Keycap",
+      preview:'Keystaxx Honeycomb Keycap',
       price: "$29.99",
       material: "Resin & Honeycomb Design",
       color: "Golden Honey with Black Accents",
@@ -109,6 +116,7 @@ const artisanKeycaps = [
       id: 8,
       image: '/src/assets/artisanKeycap8.png',
       name: "Keystaxx Aqua - Water Droplet Resin Keycap",
+      preview:'Keystaxx Water Aqua Keycap',
       price: "$34.99",
       material: "Clear Resin & Water Droplet",
       color: "Clear with Water Droplet Effect",
@@ -124,6 +132,7 @@ const artisanKeycaps = [
       id: 9,
       image: '/src/assets/artisanKeycap9.png',
       name: "Keystaxx Dragon - Dragon Resin Keycap",
+      preview:'Keystaxx Dragon Keycap',
       price: "$59.99",
       material: "Handmade Resin & Metal",
       color: "Red, Gold, and Black with Dragon Motif",
@@ -139,6 +148,7 @@ const artisanKeycaps = [
       id: 10,
       image: '/src/assets/artisanKeycap10.png',
       name: "Keystaxx Starry Night - Resin & Glitter Keycap",
+      preview:'Keystaxx Starry Night Keycap',
       price: "$49.99",
       material: "Resin & Glitter",
       color: "Midnight Blue with Silver Glitter",
@@ -160,7 +170,7 @@ export default function ArtisanKeyboards() {
     <div className="product-list" style={{  marginLeft: '100px', marginRight: '100px', outline: 'none' }}>
     
 
-        {products.map((product) => (
+        {artisanKeycaps.map((product) => (
             <div key={product.id} className="card" style={{ width: '18rem', marginBottom: '20px' }}>
                 <img src={product.image} alt={product.name} className="card-img-top" style={{height: '300px'}}/>
             <div className="card-body">
