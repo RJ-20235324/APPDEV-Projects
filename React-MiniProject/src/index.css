@@ -185,8 +185,14 @@ nav {
 
 
 
-/**/
-
+/*products*/
+.product-list{
+display: flex;
+flex-wrap: wrap;  /* Allow items to wrap to the next line */
+justify-content: space-evenly;  /* Evenly spaces items along the main axis */
+gap: 20px;  /* Optional: space between cards */
+padding: 20px;
+}
 
 
 
