@@ -46,10 +46,10 @@ export default function Home() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="/src/assets/KeyStaxx Q4.webp"
+                src="/src/assets/Keystaxx-Horizon-Preview.webp"
                 className="d-block w-100"
                 alt="..."
-                style={{ height: "561px", width: "auto" }}
+                style={{ height: "800px", width: "auto" }}
               />
               <div className="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
@@ -58,10 +58,10 @@ export default function Home() {
             </div>
             <div className="carousel-item">
               <img
-                src="/src/assets/KeyStaxx Q4.webp"
+                src="/src/assets/Keystaxx-Mirage-Preview.webp"
                 className="d-block w-100"
                 alt="..."
-                style={{ height: "561px", width: "auto" }}
+                style={{ height: "800px", width: "auto" }}
               />
               <div className="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
@@ -73,7 +73,7 @@ export default function Home() {
                 src="/src/assets/KeyStaxx Q4.webp"
                 className="d-block w-100"
                 alt="..."
-                style={{ height: "561px", width: "auto" }}
+                style={{ height: "px", width: "auto" }}
               />
               <div className="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>

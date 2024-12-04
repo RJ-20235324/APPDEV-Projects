@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link to="/Products" className="menu-item">Products</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
-          <Link to="/ArtisanKeyboards" className="menu-item">Artisan Keyboards</Link>
+          <Link to="/ArtisanKeyboards" className="menu-item">Artisan Keycaps</Link>
           </li>
           <li className={isSearchActive ? "hide-item" : ""}>
           <Link to="/Reviews" className="menu-item">Reviews</Link>

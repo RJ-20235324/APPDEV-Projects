@@ -61,7 +61,7 @@ const products = [
     },
     {
       id: 4,
-      image:'/src/assets/GTA_V.png',
+      image:'/src/assets/Keystaxx-Kraken.webp',
       preview: "Keystaxx Kraken",
       name: "Keystaxx Kraken - Tenkeyless (TKL) Mechanical Keyboard",
       price: "$109.99",
@@ -81,7 +81,7 @@ const products = [
     },
     {
       id: 5,
-      image:'/src/assets/GTA_V.png',
+      image:'/src/assets/Keystaxx-Horizon.webp',
       preview: "Keystaxx Horizon",
       name: "Keystaxx Horizon - 65% Mechanical Keyboard",
       price: "$129.99",
@@ -101,7 +101,7 @@ const products = [
     },
     {
       id: 6,
-      image:'/src/assets/GTA_V.png',
+      image:'/src/assets/Keystaxx-Arcana.webp',
       preview: "Keystaxx Arcana",
       name: "Keystaxx Arcana - Handcrafted Resin Artisan Keyboard",
       price: "$199.99",
@@ -122,7 +122,7 @@ const products = [
     },
     {
       id: 7,
-      image:'/src/assets/GTA_V.png',
+      image:'/src/assets/Keystaxx-Mirage.webp',
       preview: "Keystaxx Mirage",
       name: "Keystaxx Mirage - Artisan Acrylic Keyboard with Custom Artwork",
       price: "$179.99",
@@ -142,7 +142,7 @@ const products = [
     },
     {
       id: 8,
-      image:'/src/assets/GTA_V.png',
+      image:'/src/assets/Keystaxx-Seraph.webp',
       preview: "Keystaxx Seraph",
       name: "Keystaxx Seraph - Wood & Resin Hybrid Artisan Keyboard",
       price: "$239.99",
@@ -162,7 +162,7 @@ const products = [
     },
     {
       id: 9,
-      image:'/src/assets/GTA_V.png',
+      image:'/src/assets/Keystaxx-Zenith.webp',
       preview: "Keystaxx Zenith" ,
       name: "Keystaxx Zenith - Limited Edition Artisan Keyboard",
       price: "$299.99",
@@ -182,7 +182,7 @@ const products = [
     },
     {
         id: 10,
-        image: '/src/assets/GTA_V.png',
+        image: '/src/assets/Keystaxx-Nephim.webp',
         preview: "Keystaxx Nephim" ,
         name: "Keystaxx Nephim - Wood & Saphire Hybrid Artisan Keyboard",
         price: "$239.99",
@@ -206,7 +206,11 @@ const products = [
 export default function Products() {
     return (
       <>
-        <div className="product-list"  style={{ marginTop: '74px', marginLeft: '100px', marginRight: '100px' }}>
+    <h1 style={{fontWeight: 'bold',fontSize: '50px',color: 'black',marginTop: '74px', marginLeft: '135px'}}>Explore the lineup.</h1>
+    <br />
+    <div className="product-list" style={{  marginLeft: '100px', marginRight: '100px', outline: 'none' }}>
+    
+
         {products.map((product) => (
             <div key={product.id} className="card" style={{ width: '18rem', marginBottom: '20px' }}>
                 <img src={product.image} alt={product.name} className="card-img-top" style={{height: '300px'}}/>
